@@ -29,7 +29,9 @@ while line_counter < len(lines):
    monkeys.append(monkey)
    
    
-worry_divider =  prod(m["testnum"] for m in monkeys)
+worry_divider =  prod(m["testnum"] for m in monkeys) #this is for part 2
+# The more worried you are, the more complex the problem and the longer it runs. Ensuring that your worry always reduces prior to the test helps
+# In part 1, it's divided by 3. In part 2, we get the remainder of a sum product of all the test numbers (which are prime like 3. their product is also a prime). 
 RUNS = 10000
 start = time.perf_counter()
 for round in range(RUNS):
